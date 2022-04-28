@@ -1,136 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gesmetic A Cosmetic Shop</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- google font link  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-    <!-- google font link  -->
-    <!-- font awesome cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- font awesome cdn  -->
-    <!-- custome css link here  -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/media.css">
-    <!-- custome css link here  -->
+  <!-- fontawesome cdn  -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- fontawesome cdn  -->
+  <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <!-- google fonts  -->
+  <!-- custom css link  -->
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <!-- custom css link  -->
+  <link rel="stylesheet" href="./css/swiper.css">
+
+  <!-- swiper js link  -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- swiper js link  -->
+  <title>Gesmetic Cosmetic Shop</title>
 </head>
+
 <body>
-    
-    <!-- navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                gesmetic
-            </div>
-            <ul class="nav-list">
-                <li><a href="" class="list-item">Makeup</a></li>
-                <li><a href="" class="list-item">Skincare</a></li>
-                <li><a href="" class="list-item">Beauty</a></li>
-                <li><a href="" class="list-item">Founations</a></li>
-                <li><a href="" class="list-item">Oder Track</a></li>
-            </ul>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        Gesmetic
+      </div>
+      <ul class="nav-list">
+        <li><a href="" class="nav-item">Makeup </a></li>
+        <li><a href="" class="nav-item">Skincare</a></li>
+        <li><a href="" class="nav-item">Beauty</a></li>
+        <li><a href="" class="nav-item">Foundations</a></li>
+        <li><a href="" class="nav-item">Hair Product</a></li>
+      </ul>
+      <div class="cart-icons">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
 
-            <div class="cart-icon">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-heart"></i>
-            </div>
+      <div class="mobile-menu" onclick="showMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
 
-            <!-- mobile menu  -->
-            <div class="mobile-menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <!-- mobile menu  -->
-        </div>
-    </nav>
-    <!-- navbar -->
+  <!-- hero section  -->
+  <section class="hero-section">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slide-img">
+            <img src="./images/Main-Banner-1_1512x.jpg    " alt="banner" loading="lazy">
 
-    <!-- hero -->
-    <div class="hero">
-        <div class="hero-bg">
-            <img src="./images/Main-Banner-1_1512x.jpg" alt="" class="hero-img">
-        </div>
-    
-        <div class="hero-info">
-            <p class="hero-subtitle">
-                summer collection 2022
-            </p>
-            <h1 class="hero-title">
-                pure & natural
-                cosmetic products
+          </div>
+          <div class="slide-info ">
+            <h4 class="slide-subtitle">
+              summer collection 2022
+            </h4>
+            <h1 class="slide-title">
+              pure & natural
+              cosmetic products
             </h1>
-    
-            <small class="hero-caption">
-                Gecko products protect moisturize & lubricate
-                skin it smartly nourish,your skin with lotions
-            </small>
-            <a href="" class="hero-btn">View More</a>
-        </div>
-    </div>
-    <!-- hero -->
-
-    <!-- categorites -->
-    <div class="categories">
-        <div class="container">
-            <h2 class="section-title">
-                TRENDING COLLECTION
-            </h2>
-            <p class="section-subtitle">
-                Buy High Quality Products To Ensure The Best Quality For Your Health
+            <p class="slide-caption">
+              Gecko products protect moisturize & lubricate
+              skin it smartly nourish,your skin with lotions
             </p>
-            <div class="categories-cards">
-                <div class="card">
-                    <img src="./images/cat1_360x.png" alt="card">
-                    <h4 class="card-title">
-                        Skincare Items
-                    </h4>
-                    <p class="card-caption">
-            
-                        At the moment of application, charge the lovelyness full!
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./images/cat2_360x.png" alt="card">
-                    <h4 class="card-title">
-                        Skincare Items
-                    </h4>
-                    <p class="card-caption">
-            
-                        At the moment of application, charge the lovelyness full!
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./images/cat3_360x.png" alt="card">
-                    <h4 class="card-title">
-                        Womans Styles
-                    </h4>
-                    <p class="card-caption">
-            
-                        At the moment of application, charge the lovelyness full!
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./images/cat4_360x.png" alt="card">
-                    <h4 class="card-title">
-                        All Foundations
-                    </h4>
-                    <p class="card-caption">
-            
-                        At the moment of application, charge the lovelyness full!
-                    </p>
-                </div>
-            </div>
+            <a href="
+                    " class="slide-btn">
+              View More</a>
+          </div>
         </div>
+        <div class="swiper-slide">
+          <div class="slide-img">
+            <img src="./images/Offer-Banner_1512x.png" alt="banner" loading="lazy">
+
+          </div>
+          <div class="slide-info ">
+            <h4 class="slide-subtitle">
+              summer collection 2022
+            </h4>
+            <h1 class="slide-title">
+              pure & natural
+              cosmetic products
+            </h1>
+            <p class="slide-caption">
+              Gecko products protect moisturize & lubricate
+              skin it smartly nourish,your skin with lotions
+            </p>
+            <a href="
+                  " class="slide-btn">
+              View More</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
-    <!-- categorites -->
-    <!-- javascript  -->
-    <script src="./js/app.js"></script>
-    <!-- javascript  -->
+  </section>
+  <!-- hero section  -->
+  <!-- categories section  -->
+  <section class="categories">
+    <div class="categories-container">
+      <div class="categories-card">
+        <img src="./images/cat1_360x.png" alt="" class="category-img">
+        <h4 class="category-name">Skincare Items</h4>
+        <p class="category-details">At the moment of application, charge the lovelyness full!</p>
+      </div>
+      <div class="categories-card">
+        <img src="./images/cat2_360x.png" alt="" class="category-img">
+        <h4 class="category-name">All Foundations</h4>
+        <p class="category-details">Soft mat fit cushion to complete soft porcelain skin.!</p>
+      </div>
+      <div class="categories-card">
+        <img src="./images/cat3_360x.png" alt="" class="category-img">
+        <h4 class="category-name">Haircare Items</h4>
+        <p class="category-details">Glow cushion that moisturizes to create a clear and bright skin tone. </p>
+      </div>
+      <div class="categories-card">
+        <img src="./images/cat4_360x.png" alt="" class="category-img">
+        <h4 class="category-name">Beauty Styles</h4>
+        <p class="category-details">A scarlet red color that will create a fresh day.</p>
+      </div>
+    </div>
+  </section>
+  <!-- categories section  -->
+
+  <!-- flate offer section  -->
+  <section class="offer">
+    <div class="offer-container">
+      <div class="offer-card">
+        <div class="offer-info">
+          <h4 class="offer-title">30% Flate
+            skincare items</h4>
+          <p class="offer-subtitle">
+            big Sale Available now
+          </p>
+          <a href="index.html" class="offer-btn">Grab Now</a>
+
+        </div>
+        <img src="./images/banner-1_1950x.jpg" alt="" class="offer-img">
+      </div>
+      <div class="offer-card">
+        <div class="offer-info">
+          <h4 class="offer-title">Mega Sale Makeup Brush</h4>
+          <p class="offer-subtitle">
+            big Sale Available now
+          </p>
+          <a href="index.html" class="offer-btn">Grab Now</a>
+
+        </div>
+        <img src="./images/banner-2_1950x.jpg" alt="" class="offer-img">
+      </div>
+    </div>
+  </section>
+  <!-- flate offer section  -->
+
+  <!-- product section  -->
+  <section class="products">
+
+    <h1 class="product-title">HANDPICKED PRODUCTS</h1>
+    <p class="product-subtitle">Buy High Quality Products To Ensure The Best Quality For Your Health</p>
+
+
+    <div class="products-container">
+      <div class="product-card">
+        <img src="./images/1.jpg" alt="" class="product-img" loading="lazy">
+
+        <div class="product-cart">
+          <ul>
+            <li>-</li>
+            <li>1</li>
+            <li>+</li>
+          </ul>
+          <a href="" class="addToCart">Add to cart</a>
+        </div>
+        <p class="product-name">Makeup Remover Cream</p>
+        <p class="product-price"> Tk 3863.00</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/2.jpg" alt="" class="product-img" loading="lazy">
+
+        <div class="product-cart">
+          <ul>
+            <li>-</li>
+            <li>1</li>
+            <li>+</li>
+          </ul>
+          <a href="" class="addToCart">Add to cart</a>
+        </div>
+        <p class="product-name">Makeup Remover Cream</p>
+        <p class="product-price"> Tk 3863.00</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/3.jpg" alt="" class="product-img" loading="lazy">
+
+        <div class="product-cart">
+          <ul>
+            <li>-</li>
+            <li>1</li>
+            <li>+</li>
+          </ul>
+          <a href="" class="addToCart">Add to cart</a>
+        </div>
+        <p class="product-name">Makeup Remover Cream</p>
+        <p class="product-price"> Tk 3863.00</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/16.jpg" alt="" class="product-img" loading="lazy">
+
+        <div class="product-cart">
+          <ul>
+            <li>-</li>
+            <li>1</li>
+            <li>+</li>
+          </ul>
+          <a href="" class="addToCart">Add to cart</a>
+        </div>
+        <p class="product-name">Makeup Remover Cream</p>
+        <p class="product-price"> Tk 3863.00</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/14.jpg" alt="" class="product-img" loading="lazy">
+
+        <div class="product-cart">
+          <ul>
+            <li>-</li>
+            <li>1</li>
+            <li>+</li>
+          </ul>
+          <a href="" class="addToCart">Add to cart</a>
+        </div>
+        <p class="product-name">Makeup Remover Cream</p>
+        <p class="product-price"> Tk 3863.00</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/8.jpg" alt="" class="product-img" loading="lazy">
+
+        <div class="product-cart">
+          <ul>
+            <li>-</li>
+            <li>1</li>
+            <li>+</li>
+          </ul>
+          <a href="" class="addToCart">Add to cart</a>
+        </div>
+        <p class="product-name">Makeup Remover Cream</p>
+        <p class="product-price"> Tk 3863.00</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/7.jpg" alt="" class="product-img" loading="lazy">
+
+        <div class="product-cart">
+          <ul>
+            <li>-</li>
+            <li>1</li>
+            <li>+</li>
+          </ul>
+          <a href="" class="addToCart">Add to cart</a>
+        </div>
+        <p class="product-name">Makeup Remover Cream</p>
+        <p class="product-price"> Tk 3863.00</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/9.jpg" alt="" class="product-img" loading="lazy">
+
+        <div class="product-cart">
+          <ul>
+            <li>-</li>
+            <li>1</li>
+            <li>+</li>
+          </ul>
+          <a href="" class="addToCart">Add to cart</a>
+        </div>
+        <p class="product-name">Makeup Remover Cream</p>
+        <p class="product-price"> Tk 3863.00</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/10.jpg" alt="" class="product-img" loading="lazy">
+
+        <div class="product-cart">
+          <ul>
+            <li>-</li>
+            <li>1</li>
+            <li>+</li>
+          </ul>
+          <a href="" class="addToCart">Add to cart</a>
+        </div>
+        <p class="product-name">Makeup Remover Cream</p>
+        <p class="product-price"> Tk 3863.00</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/11.jpg" alt="" class="product-img" loading="lazy">
+
+        <div class="product-cart">
+          <ul>
+            <li>-</li>
+            <li>1</li>
+            <li>+</li>
+          </ul>
+          <a href="" class="addToCart">Add to cart</a>
+        </div>
+        <p class="product-name">Makeup Remover Cream</p>
+        <p class="product-price"> Tk 3863.00</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/12.jpg" alt="" class="product-img" loading="lazy">
+
+        <div class="product-cart">
+          <ul>
+            <li>-</li>
+            <li>1</li>
+            <li>+</li>
+          </ul>
+          <a href="" class="addToCart">Add to cart</a>
+        </div>
+        <p class="product-name">Makeup Remover Cream</p>
+        <p class="product-price"> Tk 3863.00</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/13.jpg" alt="" class="product-img" loading="lazy">
+
+        <div class="product-cart">
+          <ul>
+            <li>-</li>
+            <li>1</li>
+            <li>+</li>
+          </ul>
+          <a href="" class="addToCart">Add to cart</a>
+        </div>
+        <p class="product-name">Makeup Remover Cream</p>
+        <p class="product-price"> Tk 3863.00</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/14.jpg" alt="" class="product-img" loading="lazy">
+
+        <div class="product-cart">
+          <ul>
+            <li>-</li>
+            <li>1</li>
+            <li>+</li>
+          </ul>
+          <a href="" class="addToCart">Add to cart</a>
+        </div>
+        <p class="product-name">Makeup Remover Cream</p>
+        <p class="product-price"> Tk 3863.00</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/15.jpg" alt="" class="product-img" loading="lazy">
+
+        <div class="product-cart">
+          <ul>
+            <li>-</li>
+            <li>1</li>
+            <li>+</li>
+          </ul>
+          <a href="" class="addToCart">Add to cart</a>
+        </div>
+        <p class="product-name">Makeup Remover Cream</p>
+        <p class="product-price"> Tk 3863.00</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/16.jpg" alt="" class="product-img" loading="lazy">
+
+        <div class="product-cart">
+          <ul>
+            <li>-</li>
+            <li>1</li>
+            <li>+</li>
+          </ul>
+          <a href="" class="addToCart">Add to cart</a>
+        </div>
+        <p class="product-name">Makeup Remover Cream</p>
+        <p class="product-price"> Tk 3863.00</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/0_360x.jpg" alt="" class="product-img" loading="lazy">
+
+        <div class="product-cart">
+          <ul>
+            <li>-</li>
+            <li>1</li>
+            <li>+</li>
+          </ul>
+          <a href="" class="addToCart">Add to cart</a>
+        </div>
+        <p class="product-name">Makeup Remover Cream</p>
+        <p class="product-price"> Tk 3863.00</p>
+      </div>
+
+      
+      
+    </div>
+  </section>
+  <!-- product section  -->
+  
+  <!-- discount section  -->
+  <section class="discount">
+    <div class="discount-container">
+      <h2 class="discount-title">
+        cosmetic combo kit
+on 50% discount
+      </h2>
+      <p class="discount-subtitle">
+        Gecko products protect moisturize & lubricate
+skin it smartly nourish,your skin with lotions
+      </p>
+      <a href="#" class="discount-btn">
+        Shop Now
+      </a>
+    </div>
+  </section>
+  <!-- discount section  -->
+
+  <!-- brand section  -->
+  <section class="brand">
+    <div class="brand-container">
+      <img src="./images/brand1.jpg" alt="" class="brand-img" loading="lazy">
+      <img src="./images/brand2.jpg" alt="" class="brand-img" loading="lazy">
+      <img src="./images/brand3.jpg" alt="" class="brand-img" loading="lazy">
+      <img src="./images/brand4.jpg" alt="" class="brand-img" loading="lazy">
+      <img src="./images/brand5.jpg" alt="" class="brand-img" loading="lazy">
+      <img src="./images/brand6.jpg" alt="" class="brand-img" loading="lazy">
+    </div>
+  </section>
+  <!-- brand section  -->
+
+  <section class="social">
+    <h2 class="social-title product-title">@ FOLLOW US ON INSTAGRAM</h2>
+    <p class="social-subtitle product-subtitle">@Gecko Join our Community and Get Daily Inspirations & Products from Us</p>
+    <div class="social-container">
+      <img src="./images/social1.png" alt="" class="social-img">
+      <img src="./images/social2.png" alt="" class="social-img">
+      <img src="./images/social3.png" alt="" class="social-img">
+      <img src="./images/social4.png" alt="" class="social-img">
+      <img src="./images/social5.jpg" alt="" class="social-img">
+      <img src="./images/social6.jpg" alt="" class="social-img">
+     
+    </div>
+  </section>
+
+  <!-- footer  -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-card">
+        <h2 class="logo">gesmetic</h2>
+        <div class="footer-item">
+          <address>184 Main Rd E, St Albans
+            VIC 3021, Australia</address>
+        </div>
+        <div class="footer-item">
+         <a href = "mailto: 1234@example.com">contact@.com</a>
+        </div>
+      
+        <div class="footer-item">
+          <a to="+123456789">+123 456 789 </a>
+        </div>
+      </div>
+      <ul  class="footer-card">
+        <h4 >Categories</h4>
+        <li>Accessories</li>
+        <li>Clothing</li>
+        <li>Handbag</li>
+        <li>Footwear</li>
+        <li>Furniture</li>
+      </ul>
+      <ul  class="footer-card">
+        <h4 >Information</h4>
+        <li>About Us
+        </li>
+        <li>Contact Us
+        </li>
+        <li>Terms & Conditions
+        </li>
+        <li>Returns & Exchanges
+        </li>
+        <li>Shipping & Delivery</li>
+      </ul>
+      <ul  class="footer-card">
+        <h4 >Useful links</h4>
+        <li>Store Location</li>
+        <li>Latest News</li>
+        <li>Size Guide</li>
+        <li>Portfolio</li>
+        <li>FAQs</li>
+      </ul>
+    </div>
+  </footer>
+  <!-- footer  -->
+
+  <!-- swiper js  -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- swiper js  -->
+ 
+  <!-- javascript  -->
+  <script src="./js/app.js"></script>
+  <!-- javascript  -->
 </body>
+
 </html>
