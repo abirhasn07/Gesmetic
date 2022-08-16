@@ -75,11 +75,12 @@
 
     .slide-title{
      width: 100%;
-     font-size: 2.2rem;
+     font-size: 3rem;
      font-weight: 900;
      line-height: 140%;
      padding-bottom: 2rem;
      padding-left: 2rem;
+     color: rgba(37, 37, 37, 0.87);
      
     }
     .slide-btn{
@@ -112,11 +113,26 @@
     .product-card{
         width: 48%;
     }
+    .product-cart{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0.5em;
+    }
+    .product-cart ul{
+        width: 100%;
+        min-height: 35px;
+    }
     .product-cart ul li{
         font-size: var(--font-sm);
+        width: 30%;
+        font-size: var(--font-md);
+        line-height: 1;
+        
+    
     }
     .product-cart a{
         font-size: 0.700rem;
+        width: 100%;
     }
     /* product section  */
 
@@ -156,4 +172,10 @@
         gap: 2rem;
     }
     /* footer  */
+
+
+    .addToCart{
+        width: 40px;
+       width: 100%;
+    }
 }

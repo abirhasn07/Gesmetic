@@ -1,3 +1,5 @@
+
+
 const swiper = new Swiper(".mySwiper", {
     navigation: {
       nextEl: ".swiper-button-next",
@@ -14,8 +16,7 @@ const showMenu=()=>{
     navlist.classList.toggle("active")
 }
 
-
-// gsap 
+// console.log(database);
 
 
 // TweenMax.from('.navbar',1,{
